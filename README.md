@@ -30,7 +30,39 @@ Memorun’s gameplay mainly consists of collecting five collectable objects with
 
 The collecting and inventory system contain four parts, the point and click controlling, the disappear of the collected objects, the appearing of the memos and collected objects on the inventory UI, and the transition to enter the ending scene after all five items are collected. Firstly, there is a C# script applying onto the collectable objects. If the center point targets at the collectable object and player left clicks the mouse, two actions will happen. On one hand, the objects will disappear using a “disabled” function. On the other hand, the objects in the inventory UI are initially displayed as outlines, after clicking on the specific collatable object, the responding object’s outline will be filled. When the shape is filled after the click, a memo written by Nancy will pop up for ten seconds for the players to read it. The inventory system has a calculation function for the total objects collected. The value is initially set to 0, and once an object collected, it will plus one until the value equal to 5 to enter the ending scene. 
 
+## Artistic Style Outline 
+Memorun creates a three-dimensional pastel game world that provides an imaginary, utopia-like feeling. All game scenes are created based on Sam’s fragmented memories, together forming an uncanny world that feels like but also different from the reality. In the playable game demo, the first game plot takes place at Sam’s garage where everything placed in the scene was recognizable yet abstract in the way that further details (e.g., labels, prints, decorations, etc.) are erased. Such artistic style of the game scene was designed intentionally to be in keeping with Sam’s memory loss.
 
+![Picture2](https://user-images.githubusercontent.com/60665347/136727764-4b6d2d5b-8771-4028-8a80-7d866aee4263.jpg)
+![Picture1](https://user-images.githubusercontent.com/60665347/136727767-3e47f5bc-af24-4789-bcd5-b1de8a2638cd.png)
+
+## User Interface (UI) Design
+Memorun’s User Interface design follows a minimalistic style that mainly consists of game title/logo, icons, inventory system, and a dialogue box. All elements are placed to surround the main game scene to avoid any disruption during the play. The game control system includes keyboard and mouse. The player will use WASD and Arrow Keys to control Disky's movement, and left click on mouse to activate icons/functions and item-collecting action. The player will be using the PC built-in sound control system to control the game background music and sound effect. To exit the game, simply press “escape” key on the keyboard. 
+Both the background music and sound effect (activated with the player successfully performs item-collecting action) are from https://freesound.org. The low-fi, electro background creates an atmosphere that gives a sense of calmness, yet with a hint of suspense. 
+The help system of Memorun is embedded within the dialogue system. The dialogue box will provide the player with preliminary introduction and guide to gameplay. For the main mission – item collecting, the player will be able to find hints under the inventory system where items that are not yet collected will show in dotted outlines as an aid to the player. 
+![Picture3](https://user-images.githubusercontent.com/60665347/136727817-4dd2beeb-96fb-4733-990a-95ca5dceb272.png)
+
+## Systematic Breakdown of Components
+3D Renderer: The game is real-time rendered in a three-dimensional space. Unity 3D is the visualization tool of our game.  
+State Machine: Programmed by C# scripts, the state machine is used for object collections, transition between different scenes, and character movements. 
+User Interface: The UI design will integrate the inventory system and provide guidance for the player. 
+Collision and Rigid Body: For the character to move around in the room and collect objects, collision and rigid body prevent the character from leaving the designated game play area and walking through objects.
+Inventory: Inventory system for collecting items and displaying which items are missing. It also provides hints of the goal objects to the player.
+
+## Asset Breakdown
+Visual Assets: 
+1.	Character: Disky. A pink floppy disk figure with walking animation. 
+2.	Environment: Garage. 3D room model with furniture and miscellaneous items.
+3.	Collectables: 5 items: Ring, Scarf, Doll, Photo frame, GBA. 
+4.	UI: Dialogue box, inventory, collectable outlines, title, arrow keys, Quit.
+5.	Opening screen visual.
+Text Assets:
+1.	Intro dialogue: A few sentences at the beginning to provide guidance.
+2.	Ending dialogue: Congratulate player for completing the current level and lead to next level.
+3.	Memos: Main storytelling component.
+Sound Assets:
+1.	Background music.
+2.	Sound effect of collecting objects.
 
 
 
