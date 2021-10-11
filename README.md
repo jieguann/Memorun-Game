@@ -1,5 +1,9 @@
 # Memorun-Game
 
+
+https://user-images.githubusercontent.com/60665347/136728014-fdc36bc3-e735-4efe-9c58-02dd1f8c91cd.mp4
+
+
 ## Introduction
 Suffering from Alzheimer’s, Sam starts to lose his memories of his loved ones. As a floppy disk that stores memories, you are going to retrieve Sam’s memories by collecting items from his past. With a small memo written by Sam’s wife, Nancy, attached to each item, the heartwarming story between Sam and Nancy slowly expands in front of you. Will you be able to find all the lost memories and bring them back to Sam?
 
@@ -33,7 +37,6 @@ The collecting and inventory system contain four parts, the point and click cont
 ## Artistic Style Outline 
 Memorun creates a three-dimensional pastel game world that provides an imaginary, utopia-like feeling. All game scenes are created based on Sam’s fragmented memories, together forming an uncanny world that feels like but also different from the reality. In the playable game demo, the first game plot takes place at Sam’s garage where everything placed in the scene was recognizable yet abstract in the way that further details (e.g., labels, prints, decorations, etc.) are erased. Such artistic style of the game scene was designed intentionally to be in keeping with Sam’s memory loss.
 
-![Picture2](https://user-images.githubusercontent.com/60665347/136727764-4b6d2d5b-8771-4028-8a80-7d866aee4263.jpg)
 ![Picture1](https://user-images.githubusercontent.com/60665347/136727767-3e47f5bc-af24-4789-bcd5-b1de8a2638cd.png)
 
 ## User Interface (UI) Design
